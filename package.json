@@ -1,0 +1,93 @@
+{
+  "name": "vue-template",
+  "version": "1.0.0",
+  "description": "A template of vue with vue-router and vuex which supports server-side rendering",
+  "engines": {
+    "node": ">=6.0",
+    "npm": ">=3.0"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "better-npm-run build",
+    "dev": "better-npm-run dev",
+    "start_prod": "better-npm-run start_prod"
+  },
+  "betterScripts": {
+    "build": {
+      "command": "webpack --config tools/webpack/client.config.js && webpack --config tools/webpack/server.config.js",
+      "env": {
+        "NODE_ENV": "production"
+      }
+    },
+    "dev": {
+      "command": "node ./start.js",
+      "env": {
+        "NODE_ENV": "devlopment",
+        "target": "local"
+      }
+    },
+    "start_prod": {
+      "command": "node ./start.js",
+      "env": {
+        "NODE_ENV": "production",
+        "target": "online"
+      }
+    }
+  },
+  "keywords": [
+    "vue-template",
+    "vue",
+    "vue-router",
+    "vuex",
+    "vue-server-renderer",
+    "hot-reload",
+    "server-side rendering"
+  ],
+  "author": "changhua.li <1275305684@qq.com>",
+  "license": "MIT",
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "babel-register": "^6.26.0",
+    "colors": "^1.3.1",
+    "express": "^4.16.3",
+    "pathval": "^1.1.0",
+    "vue": "^2.5.17",
+    "vue-css-modules": "^1.2.0",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1",
+    "vuex-router-sync": "^5.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.1.2",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "better-npm-run": "^0.1.1",
+    "clean-webpack-plugin": "^1.0.0",
+    "css-loader": "^1.0.0",
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-vue": "^4.7.1",
+    "file-loader": "^2.0.0",
+    "less": "^3.8.1",
+    "less-loader": "^4.1.0",
+    "memory-fs": "^0.4.1",
+    "postcss-loader": "^3.0.0",
+    "uglifyjs-webpack-plugin": "^2.0.1",
+    "url-loader": "^1.1.2",
+    "vue-eslint-parser": "^4.0.2",
+    "vue-loader": "^15.3.0",
+    "vue-server-renderer": "^2.5.17",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.5.17",
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-middleware": "^3.1.3",
+    "webpack-hot-middleware": "^2.22.3",
+    "webpack-merge": "^4.1.4"
+  }
+}

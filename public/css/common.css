@@ -1,0 +1,15 @@
+html {
+  font-size: 12px;
+  font-family: PingFang SC,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Arial,sans-serif;
+  background-color: #f4f5f5;
+}
+.container {
+  position: relative;
+  max-width: 960px;
+  margin: auto;
+}
+.clearfix:after {
+  display: block;
+  content: '';
+  clear: both;
+}

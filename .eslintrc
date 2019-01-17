@@ -1,0 +1,29 @@
+{
+  "root": true,
+  "parser": "vue-eslint-parser",
+  "parserOptions": {
+    "parser": "babel-eslint",
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "extends": [
+    "plugin:vue/recommended",
+    "airbnb-base"
+  ],
+  "rules": {
+    "vue/attribute-hyphenation": "off",
+    "import/prefer-default-export": "off",
+    "import/no-unresolved": "off",
+    "no-param-reassign": "off",
+    "global-require": "off",
+    "no-underscore-dangle": "off",
+    "prefer-promise-reject-errors": "off",
+    "consistent-return": "off",
+    "no-console": "off",
+    "no-alert": "off",
+    "no-undef": "off",
+    "no-return-assign": "off",
+    "arrow-parens": "off",
+    "camelcase": "off"
+  }
+}
