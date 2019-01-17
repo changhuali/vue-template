@@ -7,10 +7,9 @@ import deployConfig from '../config/deploy';
 const app = express();
 
 /*
-* Get createRenderer func by env.
-* It must be implemented as early as possible,
-* otherwise some request for static assets will be process by express.static,
-* but express.static will send assets that in the dist directory instead of in memory.
+* Get renderer by env.
+* It must be implemented earlier than static assets proxy,
+* otherwise express.static will send assets that in the dist directory instead of in memory.
 */
 let createRenderer;
 let renderer;
